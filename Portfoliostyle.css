@@ -104,7 +104,7 @@ body {
     position:absolute;
     top:600px;
     width:820px;
-    height:800px;
+    height:1100px;
     left:310px;
     background-color: rgb(61, 61, 61);
     text-align:center;
@@ -114,14 +114,14 @@ body {
     position:absolute;
     top:600px;
     width:300px;
-    height:800px;
+    height:1100px;
     background-color:rgb(7, 17, 39);
 }
 #right-block {
     position:absolute;
     top:600px;
     width:300px;
-    height:800px;
+    height:1100px;
     right:10px;
     background-color: rgb(7, 17, 39);
 }
@@ -130,18 +130,18 @@ body {
     width:250px;
     height:580px;
     right:20px;
-    top:100px;
+    top:230px;
 }
 #right-art {
     position:absolute;
     width:250px;
     height:580px;
     right:20px;
-    top:100px; 
+    top:230px; 
 }
 #contact-info {
     position:relative;
-    top: 230px;
+    top: 530px;
     color: rgb(0, 0, 0);
 
 }
@@ -155,36 +155,47 @@ dl {
 h1 {
     font-size:xx-large;
 }
-#web-dev {
+#Password-Generator {
     position:absolute;
-    top:500px;
-    left:20px;
+    top:450px;
+    left:60px;
     display:block;
     z-index:999;
     transition: all .2s ease-in-out; 
 }
-#web-dev:hover { 
+#Password-Generator:hover { 
     transform: scale(1.2); 
 }
-#data {
+#commonTest {
     position:absolute;
-    top:500px;
-    left:285px;
+    top:810px;
+    left:35px;
     display:block;
     z-index:999;
     transition: all .2s ease-in-out;
 }
-#data:hover { 
+#commonTest:hover { 
     transform: scale(1.2); 
 }
-#artificial {
+#coffeeProject {
     position:absolute;
-    top:500px;
-    left:550px;
+    top:810px;
+    left:320px;
     display:block;
     z-index:999;
     transition: all .2s ease-in-out;
 }
-#artificial:hover { 
+#coffeeProject:hover { 
     transform: scale(1.2); 
+}
+#weatherForcast {
+    position:absolute;
+    top:810px;
+    left:570px;
+    display:block;
+    z-index:999;
+    transition: all .2s ease-in-out;
+}
+#weatherForcast:hover {
+    transform: scale(1.2);
 }
