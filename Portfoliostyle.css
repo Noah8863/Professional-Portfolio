@@ -1,5 +1,8 @@
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+}
+.profileBlock {
+    text-align: center;
 }
 #header-picture {
     background-image: url("https://img.freepik.com/free-photo/technology-network-background_34629-304.jpg?size=626&ext=jpg");
@@ -7,33 +10,17 @@ body {
     background-repeat: no-repeat;
 }
 #avatar-picture {
-    position: relative;
-    top:10%;
+    margin-top: 30px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
-#name {
-    position: absolute;
-    top: 250px;
-    left: 460px;
-    font-size: 70px;
-    color: rgb(158, 231, 253); 
-}
-#underline {
-    position:absolute;
-    top:370px;
-    left:405px;
-    width:550px;
-    height: 2px;
-    background-color: #ffffff;
-}
+
 .topnav{
     background-color: #333;
 } 
 .topnav a {
     float: left;
-    text-align: center;
     color: #f2f2f2;
     text-decoration: none;
     font-size: 17px;
@@ -61,10 +48,21 @@ body {
 .topnav-right {
     margin-left: 10px;
     float: right;
-    display: flex;
-    justify-content: flex-end;
 }
-
+@media screen and (max-width: 600px) {
+    .topnav-right {
+        float: none;
+        width: 100%;
+        margin: 0px;
+    }
+    .topnav-social-media {
+        justify-content:flex-start;
+    }
+    .topnav a {
+        font-size: 12px;
+        margin: 5px;
+    }
+}
 #twitter {
     width:50px;
     height:40px;
