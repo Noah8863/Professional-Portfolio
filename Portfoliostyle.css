@@ -3,11 +3,10 @@ body {
 }
 .profileBlock {
     text-align: center;
+    background-color: grey;
 }
 #header-picture {
-    background-image: url("https://img.freepik.com/free-photo/technology-network-background_34629-304.jpg?size=626&ext=jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    
 }
 #avatar-picture {
     margin-top: 30px;
@@ -15,7 +14,6 @@ body {
     height: 200px;
     border-radius: 50%;
 }
-
 .topnav{
     background-color: #333;
 } 
@@ -49,20 +47,6 @@ body {
     margin-left: 10px;
     float: right;
 }
-@media screen and (max-width: 600px) {
-    .topnav-right {
-        float: none;
-        width: 100%;
-        margin: 0px;
-    }
-    .topnav-social-media {
-        justify-content:flex-start;
-    }
-    .topnav a {
-        font-size: 12px;
-        margin: 5px;
-    }
-}
 #twitter {
     width:50px;
     height:40px;
@@ -75,48 +59,17 @@ body {
     width:50px;
     height:40px;
 }
+.mainBlock {
+    display: block;
+}
 .about-block {
-    position:absolute;
-    top:600px;
-    width:820px;
-    height:1100px;
-    left:310px;
     background-color: rgb(61, 61, 61);
-    text-align:center;
     overflow-wrap: break-word;
-}
-#left-block {
-    position:absolute;
-    top:600px;
-    width:300px;
-    height:1100px;
-    background-color:rgb(7, 17, 39);
-}
-#right-block {
-    position:absolute;
-    top:600px;
-    width:300px;
-    height:1100px;
-    right:10px;
-    background-color: rgb(7, 17, 39);
-}
-#left-art {
-    position:absolute;
-    width:250px;
-    height:580px;
-    right:20px;
-    top:230px;
-}
-#right-art {
-    position:absolute;
-    width:250px;
-    height:580px;
-    right:20px;
-    top:230px; 
+    text-align: center;
+    
 }
 #contact-info {
     position:relative;
-    top: 530px;
     color: rgb(0, 0, 0);
 
 }
@@ -131,9 +84,7 @@ h1 {
     font-size:xx-large;
 }
 #Password-Generator {
-    position:absolute;
-    top:450px;
-    left:60px;
+    position:relative;
     display:block;
     z-index:999;
     transition: all .2s ease-in-out; 
@@ -142,9 +93,7 @@ h1 {
     transform: scale(1.2); 
 }
 #commonTest {
-    position:absolute;
-    top:810px;
-    left:35px;
+    position:relative;
     display:block;
     z-index:999;
     transition: all .2s ease-in-out;
@@ -153,9 +102,7 @@ h1 {
     transform: scale(1.2); 
 }
 #coffeeProject {
-    position:absolute;
-    top:810px;
-    left:320px;
+    position:relative;
     display:block;
     z-index:999;
     transition: all .2s ease-in-out;
@@ -164,13 +111,25 @@ h1 {
     transform: scale(1.2); 
 }
 #weatherForcast {
-    position:absolute;
-    top:810px;
-    left:570px;
+    position: relative;
     display:block;
     z-index:999;
     transition: all .2s ease-in-out;
 }
 #weatherForcast:hover {
     transform: scale(1.2);
+}
+@media screen and (max-width: 600px) {
+    .topnav-right {
+        float: none;
+        width: 100%;
+        margin: 0px;
+    }
+    .topnav-social-media {
+        justify-content:flex-start;
+    }
+    .topnav a {
+        font-size: 12px;
+        margin: 5px;
+    }
 }
