@@ -1,20 +1,14 @@
 body {
-    background-color: white
+    background-color: black;
 }
 #header-picture {
-    width: 100%;
-    height: 700px;
-    /** background-image: url("https://img.freepik.com/free-photo/technology-network-background_34629-304.jpg?size=626&ext=jpg"); **/
+    background-image: url("https://img.freepik.com/free-photo/technology-network-background_34629-304.jpg?size=626&ext=jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    resize: both;
-    overflow: auto;
 }
 #avatar-picture {
-    position: absolute;
-    top: 100px;
-    left: 590px;
+    position: relative;
+    top:10%;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -26,33 +20,51 @@ body {
     font-size: 70px;
     color: rgb(158, 231, 253); 
 }
-.topnav {
-    position: relative;
-    top: 10px;
-    width: 1420px;
-    background-color: #333;
+#underline {
+    position:absolute;
+    top:370px;
+    left:405px;
+    width:550px;
+    height: 2px;
+    background-color: #ffffff;
 }
-.topnav a { 
+.topnav{
+    background-color: #333;
+} 
+.topnav a {
+    float: left;
+    text-align: center;
     color: #f2f2f2;
     text-decoration: none;
     font-size: 17px;
+    margin: 20px;
 }
+  
 .topnav a:hover {
     color: black;
 }
-.topnav-left{
-    display: flex;
-    justify-content: flex-start;
+  
+.topnav a.active {
+    background-color: #ffffff;
+    color: white;
 }
+  
 .topnav-social-media a {
+    float: none;
+    flex-direction: column;
+    margin: 5px;
+}
+.topnav-social-media {
     display: flex;
     justify-content: center;
-    
 }
 .topnav-right {
+    margin-left: 10px;
+    float: right;
     display: flex;
     justify-content: flex-end;
 }
+
 #twitter {
     width:50px;
     height:40px;
