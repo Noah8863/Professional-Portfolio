@@ -80,6 +80,7 @@ body {
 #contact-info {
     position:relative;
     color: rgb(255, 255, 255);
+    margin: 30px;
 }
 p {
     color: white;
