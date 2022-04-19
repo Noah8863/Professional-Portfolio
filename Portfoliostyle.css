@@ -1,12 +1,9 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 .profileBlock {
     text-align: center;
     background-color: grey;
-}
-#header-picture {
-    
 }
 #avatar-picture {
     margin-top: 30px;
@@ -71,7 +68,6 @@ body {
 #contact-info {
     position:relative;
     color: rgb(0, 0, 0);
-
 }
 p {
     color: white;
@@ -83,38 +79,65 @@ dl {
 h1 {
     font-size:xx-large;
 }
+
 #Password-Generator {
     position:relative;
-    display:block;
-    z-index:999;
+    display:inline-block;
     transition: all .2s ease-in-out; 
+}
+#Password-Generator img {
+    width: 50%;
+    height: 30%;
 }
 #Password-Generator:hover { 
     transform: scale(1.2); 
 }
+.smallerProjectBlock:after {
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+.col {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    
+}
 #commonTest {
     position:relative;
-    display:block;
-    z-index:999;
+    left: 30px;
     transition: all .2s ease-in-out;
+}
+#commonTest img {
+    width: 50%;
+    height: 50%;
 }
 #commonTest:hover { 
     transform: scale(1.2); 
 }
 #coffeeProject {
     position:relative;
-    display:block;
-    z-index:999;
+    left:50px;
     transition: all .2s ease-in-out;
+}
+#coffeeProject img {
+    width: 40%;
+    height: 40%;
+    z-index:999;
 }
 #coffeeProject:hover { 
     transform: scale(1.2); 
 }
 #weatherForcast {
     position: relative;
-    display:block;
     z-index:999;
     transition: all .2s ease-in-out;
+}
+#weatherForcast img {
+    width: 50%;
+    height: 50%;
+    z-index:999;
 }
 #weatherForcast:hover {
     transform: scale(1.2);
@@ -131,5 +154,18 @@ h1 {
     .topnav a {
         font-size: 12px;
         margin: 5px;
+    }
+    #Password-Generator img {
+        width: 100%;
+    }
+    #coffeeProject {
+        left: 0px;
+    }
+    #commonTest {
+        left: 0px;
+    }
+    #coffeeProject img {
+        width: 50%;
+        height: 50%;
     }
 }
