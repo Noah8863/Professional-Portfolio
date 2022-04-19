@@ -3,13 +3,25 @@ body {
 }
 .profileBlock {
     text-align: center;
-    background-color: grey;
+    background-image: url("https://img.freepik.com/free-photo/technology-network-background_34629-304.jpg?size=626&ext=jpg");
 }
+
 #avatar-picture {
     margin-top: 30px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+#name {
+    position: relative;
+    text-decoration:wavy;
+    color:rgb(158, 231, 253)
+}
+#underline {
+    position: relative;
+    width: 100px;
+    height: 2px;
+    
 }
 .topnav{
     background-color: #333;
@@ -60,14 +72,14 @@ body {
     display: block;
 }
 .about-block {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(5, 23, 48);
     overflow-wrap: break-word;
     text-align: center;
     
 }
 #contact-info {
     position:relative;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 p {
     color: white;
@@ -78,12 +90,14 @@ dl {
 }
 h1 {
     font-size:xx-large;
+    color: rgb(158, 231, 253);
 }
 
 #Password-Generator {
     position:relative;
     display:inline-block;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
+    
 }
 #Password-Generator img {
     width: 50%;
@@ -101,7 +115,7 @@ h1 {
 .col {
     float: left;
     width: 30%;
-    padding: 5px;
+    
     
 }
 #commonTest {
