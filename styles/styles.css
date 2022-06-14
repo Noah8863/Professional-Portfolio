@@ -1,0 +1,301 @@
+body {
+  background-color: black;
+}
+
+p {
+  font-size: larger;
+}
+
+dl {
+  color: white;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #9ee7fd;
+}
+
+.profileBlock {
+  text-align: center;
+  background-image: url("https://img.freepik.com/free-photo/technology-network-background_34629-304.jpg?size=626&ext=jpg");
+}
+
+#avatar-picture {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#name {
+  position: relative;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  color: #9ee7fd;
+}
+
+#underline {
+  position: relative;
+  width: 100px;
+  height: 2px;
+}
+
+.topnav {
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 20px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffffff;
+  color: white;
+}
+
+.topnav-right {
+  margin-left: 10px;
+  float: right;
+}
+
+.mainBlock {
+  display: block;
+}
+
+.about-block {
+  background-color: #051730;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+#contact-info {
+  position: relative;
+  margin: 30px;
+  background-color: #020202;
+}
+
+#Password-Generator {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#Password-Generator img {
+  width: 50%;
+  height: 30%;
+}
+
+#Password-Generator:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.smallerProjectBlock:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col {
+  float: left;
+  width: 30%;
+}
+
+#commonTest {
+  position: relative;
+  left: 30px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#commonTest img {
+  width: 50%;
+  height: 50%;
+}
+
+#commonTest:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#coffeeProject {
+  position: relative;
+  left: 50px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#coffeeProject img {
+  width: 40%;
+  height: 40%;
+  z-index: 999;
+}
+
+#coffeeProject:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#weatherForcast {
+  position: relative;
+  z-index: 999;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#weatherForcast img {
+  width: 50%;
+  height: 50%;
+  z-index: 999;
+}
+
+#weatherForcast:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #474646;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #000000;
+  padding: 5px 8px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  -webkit-transform: translate(-50%) rotate(45deg);
+          transform: translate(-50%) rotate(45deg);
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav-right {
+    float: none;
+    width: 100%;
+    margin: 0px;
+  }
+  .topnav-social-media {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .topnav a {
+    font-size: 12px;
+    margin: 5px;
+  }
+  #Password-Generator img {
+    width: 100%;
+  }
+  #coffeeProject {
+    left: 0px;
+  }
+  #commonTest {
+    left: 0px;
+  }
+  #coffeeProject img {
+    width: 50%;
+    height: 50%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
