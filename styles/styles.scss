@@ -1,6 +1,16 @@
 body {
     background-color: rgb(0, 0, 0);
 }
+p {
+    font-size: larger;
+}
+dl {
+    color: white;
+}
+h1 {
+    font-size:xx-large;
+    color: rgb(158, 231, 253);
+}
 .profileBlock {
     text-align: center;
     background-image: url("https://img.freepik.com/free-photo/technology-network-background_34629-304.jpg?size=626&ext=jpg");
@@ -42,31 +52,9 @@ body {
     background-color: #ffffff;
     color: white;
 }
-  
-.topnav-social-media a {
-    float: none;
-    flex-direction: column;
-    margin: 5px;
-}
-.topnav-social-media {
-    display: flex;
-    justify-content: center;
-}
 .topnav-right {
     margin-left: 10px;
     float: right;
-}
-#twitter {
-    width:50px;
-    height:40px;
-}
-#instagram {
-    width:50px;
-    height:40px;
-}
-#facebook {
-    width:50px;
-    height:40px;
 }
 .mainBlock {
     display: block;
@@ -79,21 +67,9 @@ body {
 }
 #contact-info {
     position:relative;
-    color: rgb(255, 255, 255);
     margin: 30px;
+    background-color: rgb(2, 2, 2);
 }
-p {
-    color: white;
-    font-size: larger;
-}
-dl {
-    color: white;
-}
-h1 {
-    font-size:xx-large;
-    color: rgb(158, 231, 253);
-}
-
 #Password-Generator {
     position:relative;
     display:inline-block;
@@ -115,9 +91,7 @@ h1 {
 }
 .col {
     float: left;
-    width: 30%;
-    
-    
+    width: 30%;   
 }
 #commonTest {
     position:relative;
@@ -157,6 +131,92 @@ h1 {
 #weatherForcast:hover {
     transform: scale(1.2);
 }
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+}
+  
+.wrapper .icon {
+    position: relative;
+    background: rgb(71, 70, 70);
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #000000;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+    
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 600px) {
     .topnav-right {
         float: none;
