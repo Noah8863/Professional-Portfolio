@@ -1,5 +1,13 @@
+//Page styles
+html {
+  font-family: sans-serif;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+} 
 body {
-    background-color: rgb(0, 0, 0);
+    margin: 0;
 }
 p {
     font-size: larger;
@@ -7,15 +15,10 @@ p {
 dl {
     color: white;
 }
-h1 {
-    font-size:xx-large;
-    color: rgb(158, 231, 253);
-}
 .profileBlock {
     text-align: center;
     background-image: url("https://img.freepik.com/free-photo/technology-network-background_34629-304.jpg?size=626&ext=jpg");
 }
-
 #avatar-picture {
     margin-top: 30px;
     width: 200px;
@@ -24,15 +27,19 @@ h1 {
 }
 #name {
     position: relative;
-    text-decoration:wavy;
     color:rgb(158, 231, 253)
 }
 #underline {
     position: relative;
     width: 100px;
     height: 2px;
-    
 }
+.hide {
+    display: none;
+}
+
+
+//Navigation styles
 .topnav{
     background-color: #333;
 } 
@@ -41,102 +48,242 @@ h1 {
     color: #f2f2f2;
     text-decoration: none;
     font-size: 17px;
-    margin: 20px;
+    margin-left: 20px;
+    
+    margin-top: 20px;
 }
-  
 .topnav a:hover {
     color: black;
-}
-  
+} 
 .topnav a.active {
     background-color: #ffffff;
     color: white;
 }
 .topnav-right {
-    margin-left: 10px;
     float: right;
-}
-.mainBlock {
-    display: block;
-}
-.about-block {
-    background-color: rgb(5, 23, 48);
-    overflow-wrap: break-word;
-    text-align: center;
-    
-}
-#contact-info {
-    position:relative;
-    margin: 30px;
-    background-color: rgb(2, 2, 2);
-}
-#Password-Generator {
-    position:relative;
-    display:inline-block;
-    transition: all .2s ease-in-out;
-    
-}
-#Password-Generator img {
-    width: 50%;
-    height: 30%;
-}
-#Password-Generator:hover { 
-    transform: scale(1.2); 
-}
-.smallerProjectBlock:after {
-    content: "";
-    clear: both;
-    display: table;
-    
-}
-.col {
-    float: left;
-    width: 30%;   
-}
-#commonTest {
-    position:relative;
-    left: 30px;
-    transition: all .2s ease-in-out;
-}
-#commonTest img {
-    width: 50%;
-    height: 50%;
-}
-#commonTest:hover { 
-    transform: scale(1.2); 
-}
-#coffeeProject {
-    position:relative;
-    left:50px;
-    transition: all .2s ease-in-out;
-}
-#coffeeProject img {
-    width: 40%;
-    height: 40%;
-    z-index:999;
-}
-#coffeeProject:hover { 
-    transform: scale(1.2); 
-}
-#weatherForcast {
-    position: relative;
-    z-index:999;
-    transition: all .2s ease-in-out;
-}
-#weatherForcast img {
-    width: 50%;
-    height: 50%;
-    z-index:999;
-}
-#weatherForcast:hover {
-    transform: scale(1.2);
+    margin-right: 20px;
 }
 
+
+
+
+
+#aboutMeCard {
+    left: 10%;
+    margin-right: 20%;
+    width: 300px;
+    height: 300px;
+}
+
+#experinceCard {
+    left: 20%;
+    margin-right: 20%;
+    width: 300px;
+    height: 300px;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+}
+  
+.tile:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    color: black;
+    background-color:rgb(92, 90, 90);
+}
+  
+.flip-card-back {
+    background-color: #000000;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+$tile-bg: rgb(6, 6, 32);
+
+// Styles.
+.tiles {
+  left: 50%;
+  perspective: 400px;
+  position: relative;
+  
+  transform: translateY(-50%) translateX(-50%);
+  width: 100vw;
+  background-color: pink;
+}
+
+.tile {
+  animation: .8s cubic-bezier(.25, .25, .25, 1.15) both fade-in;
+  background: $tile-bg;
+  border-radius: 4px;
+  float: left;
+  height: 75px;
+  margin: 5px;
+  width: 100px;
+
+  .card {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    color:black;
+    // transform-origin: right center;
+    width: 100%;
+    // z-index: 1;
+    
+    &.front {
+        //Main block that is seen when the card is being flipped
+        background-color: pink;
+    }
+    
+    &.back {
+      transform: rotateY( 180deg );
+    }
+  }
+}
+
+// Loop from 1-12.
+@for $i from 1 through 12 {
+  .tile {
+    &:nth-child(#{$i}) {
+      
+      // Delay the animation. Delay increases as items loop.
+      animation-delay: $i * (.04s);
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: rotateY(180deg);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+
+
+
+
+
+
+
+// Main Container Styles
+.nav{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    background-color: rgb(6, 6, 32);
+    color: white;
+}
+.about-me-container{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    background-color: grey;
+}
+section {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+h1  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    left: 0;
+}
+
+.gallery {
+    border: 1px solid rgb(0, 0, 0);
+    scroll-snap-align:middle;
+    margin-top: 20%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+  
+li {
+    scroll-snap-align: center;
+    display: inline-block;
+    height: 83vh;
+    border-radius: 3px;
+    font-size: 0;
+    margin-right: 3rem;
+    background-color: rgb(0, 0, 0);
+}
+#project1 {
+    background-color: pink;
+    width: 200px;
+    height: 100px;
+    scroll-snap-align: center;
+}
+#project2 {
+    background-color: rgb(231, 18, 53);
+    height: 100%;
+    scroll-snap-align: center;
+}
+
+
+
+//Social Media Container styles
+#contact {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    height: 20vh;
+    text-align: center;
+    position: relative;
+    background-color: grey;
+}
 .wrapper {
     display: inline-flex;
     list-style: none;
 }
-  
 .wrapper .icon {
     position: relative;
     background: rgb(71, 70, 70);
@@ -213,23 +360,19 @@ h1 {
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
-  background: #333333;
+  background: #5e1d94;
+  color: #ffffff;
+}
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #1c6894;
   color: #ffffff;
 }
 
+
+// Different resolution settings
 @media screen and (max-width: 600px) {
-    .topnav-right {
-        float: none;
-        width: 100%;
-        margin: 0px;
-    }
-    .topnav-social-media {
-        justify-content:flex-start;
-    }
-    .topnav a {
-        font-size: 12px;
-        margin: 5px;
-    }
     #Password-Generator img {
         width: 100%;
     }
@@ -242,5 +385,20 @@ h1 {
     #coffeeProject img {
         width: 50%;
         height: 50%;
+    }
+    .wrapper .icon {
+        width: 20px;
+        height: 20px;
+        right: 35%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .contact-info {
+        width: 100vmin;
+    }
+    .wrapper .icon {
+        width: 15px;
+        height: 15px;
+        right: 35%;
     }
 }
