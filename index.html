@@ -12,116 +12,166 @@
 </head>
 
 <body>
+    <!-- Navivation Bar -->
+    <section class="nav">
+        <div class="topnav">
+            <div class="topnav-left">
+                <a href="https://www.theverge.com/tech" target="_blank">News</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="topnav-right">
+                <a href="#projects">Projects</a>
+                <a href="#about-block">About</a>
+            </div>
+        </div>
+        <div class="profileBlock">
+            <div id="header-picture"></div>
+            <img id="avatar-picture"
+                src="https://scontent.fapa1-2.fna.fbcdn.net/v/t1.6435-9/44337436_1065388343649119_4470334126410432512_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PBECmvoKcXwAX-nIQFp&_nc_ht=scontent.fapa1-2.fna&oh=00_AT-tuIYKn18XA06L5jCyjzpXrGTdI5SQiXwOmfHHRqbyKQ&oe=62CD6107"
+                alt="profilePicture" title="profilePicture">
+            <h1 id="name">Noah Hoffman</h1>
+            <h2>Full Stack Web Developer</h2>
+        </div>
+        <h2 style="color:white;">About Me</h2>
 
-    <div class="topnav">
 
-        <div class="topnav-left">
-            <a href="https://www.theverge.com/tech" target="_blank">News</a>
-            <a href="#contact-info">Contact</a>
+
+
+        <div class="tiles">
+            <div class="tile flip-card-inner" id="aboutMeCard">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Noah Hoffman</h2>
+                            <img src="https://scontent.fapa1-1.fna.fbcdn.net/v/t31.18172-8/20287124_764786613709295_8046053423421122983_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=QxNEv5lIvBIAX9T7CCV&_nc_ht=scontent.fapa1-1.fna&oh=00_AT9cRANtTSSkUCOgZM_6pzvyATHjQ92UNPDVh6gj7SETVA&oe=62CF1B1E"
+                                width="220px" height="220px">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Noah Hoffman</h3>
+                            <p>Full Stack Developer</p>
+                            <p>Denver, Colorado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile flip-card-inner" id="experinceCard">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Experince</h2>
+                        </div>
+                        <div class="flip-card-back">
+
+                            <h2>Observ Inc
+                                <button onclick="observ()"><i class="fa-solid fa-caret-down"></i></button>
+                            </h2>
+                            <p class="hide" id="observinfo">
+                                Funnel Cake Concessions Worker <br>
+                                2016 - 2018 <br>
+                                4333 Cherokee St, Denver, CO 80216 <br>
+
+                            </p>
+
+                            <h2>Best Buy
+                                <button onclick="bestbuy()"><i class="fa-solid fa-caret-down"></i></button>
+                            </h2>
+                            <p class="hide" id="bestbuyinfo">
+                                Verizon Sales Specialists<br>
+                                2019 - 2021 <br>
+                                104 W 104th Ave, Denver, CO 80234 <br>
+                            </p>
+
+                            <h2>Verizon
+                                <button onclick="verizon()"><i class="fa-solid fa-caret-down"></i></button>
+                            </h2>
+                            <p class="hide" id="verizoninfo">
+                                Verizon Sales Assoiciate <br>
+                                Jan. 2022 - April. 2022 <br>
+                                8461 S Yosemite St Ste 101, Lone Tree, CO 80124
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
-        <div class="topnav-right">
-            <a href="#projects">Projects</a>
-            <a href="#about-block">About</a>
+
+
+
+
+    </section>
+    <!-- Main Containers -->
+
+    <section class="about-me-container">
+        <h1>Section One</h1>
+    </section>
+
+    <section>
+        <div class="gallery">
+            <ul>
+                <li id="project1">
+                    <div>
+                        First Project
+                    </div>
+                </li>
+                <li id="project2">
+                    <div>
+                        Second Project
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
+    </section>
 
-    <div class="profileBlock">
-        <div id="header-picture"></div>
-        <img id="avatar-picture"
-            src="https://scontent.fapa1-2.fna.fbcdn.net/v/t1.6435-9/44337436_1065388343649119_4470334126410432512_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PBECmvoKcXwAX-nIQFp&_nc_ht=scontent.fapa1-2.fna&oh=00_AT-tuIYKn18XA06L5jCyjzpXrGTdI5SQiXwOmfHHRqbyKQ&oe=62CD6107"
-            alt="profilePicture" title="profilePicture">
-        <h1 id="name">Noah Hoffman</h1>
-        <div id="underline"></div>
 
-    </div>
 
-    <!-- Main Center Text Block-->
-    <div class="about-block">
-        <!-- <h1 style="color: rgb(158, 231, 253)">About Me</h1>
-        <p style="color: white">My name is Noah Hoffman and I currently live in Denver, Colorado. I've lived in Denver
-            my whole life and I plan on changing that within a couple of years! I am attending a coding bootcamp at the
-            University of Denver to get certified as a Full Stack Developer. I've always had an interest in technology
-            and becoming a software developer is a perfect opportunity to dive deeper in the industry. </p>
-        <p>Outside of loving everything about technology, I'm also heavily into music. I've been playing the upright
-            bass since 4th grade and I just recently got into DJing. I enjoy everything from classical and jazz to
-            club/house music. You'll never catch me not listening to music and looking for some new tunes to jam to.</p>
 
-        <h1>My Previous Employers Have Been: </h1>
-        <dl>
-            <li>Observ</li>
-            <li>Computer Repair Shop</li>
-            <li>Best Buy</li>
-            <li>Verizon (Current)</li>
-        </dl>
-        <h1>Topics I'm Currently Learning About</h1>
-        <dl>
-            <li>AWS Cloud Servers</li>
-            <li>Python</li>
-            <li>Entry into Robotics</li>
-        </dl>
-        </p>
-
-        <h1 id="projects" style="color: rgb(158, 231, 253)">Projects I've Worked On:</h1> -->
-
-        <!-- <div id="Password-Generator">
-            <a href="https://noah8863.github.io/Password-Generator/" target="_blank">
-                <p>Password-Generator</p>
-                <img src="https://i0.wp.com/whatismyip.network/wp-content/uploads/2019/09/Strong-Password-Generator.jpg?fit=1280%2C721&ssl=1"
-                    alt="web developement picture" title="Web Developement Picture">
-            </a>
-        </div>
-        <div class="smallerProjectBlock">
-            <div id="commonTest" class="col">
-                <a href="https://noah8863.github.io/Quiz-Your-Common-Sense-/" target="_blank">
-                    <p>Common Sense Test Project</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTy737Z_wM1lFEFNEa3bDCLozaupEqdwFpZA&usqp=CAU"
-                        alt="data analysis picture" title="Data Analysis Picture">
-                </a>
-            </div>
-            <div id="coffeeProject" class="col">
-                <a href="https://noah8863.github.io/Coffee-and-Book-Finder/" target="_blank">
-                    <p>Coffee and Book Finder</p>
-                    <img src="https://yt3.ggpht.com/ytc/AKedOLQC6mmnPJieeuJ1sD_pp02vgtoI-WcpiEOKO_H3=s900-c-k-c0x00ffffff-no-rj"
-                        alt="A.I Picture" title="A.I. Picture">
-                </a>
-            </div>
-            <div id="weatherForcast" class="col">
-                <a href="https://noah8863.github.io/Local_Weather_Dashboard/" target="_blank">
-                    <p>Weather Forcast Dashboard</p>
-                    <img src="https://store-images.s-microsoft.com/image/apps.16894.c02476d2-2378-4f60-8290-b6d4b3842643.79a2ef6a-4775-4c79-8d93-9caf077660eb.1bbd88a4-0a17-4750-91a0-cd7d98f58e9d"
-                        alt="Weather-Forcast" title="Weather-Forcast-Picture">
-                </a>
-            </div>
-        </div> -->
-
-    
+    <!-- Contact Information  -->
+    <section id="contact">
         <div id="contact-info">
             <!-- Code Inspired by Abdelrhman Said -->
             <ul class="wrapper">
-                <a href="https://www.facebook.com/noah.stack.16/" target="_blank" style="color: white;"><li class="icon facebook">
-                    <span class="tooltip">Facebook</span>
-                    <span><i class="fab fa-facebook-f"></i></span>
-                </li></a>
+                <a href="https://www.facebook.com/noah.stack.16/" target="_blank" style="color: white;">
+                    <li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                    </li>
+                </a>
 
-                <a href="https://www.instagram.com/noah8863/" target="_blank" style="color: white;"> <li class="icon instagram">
-                    <span class="tooltip">Instagram</span>
-                    <span><i class="fab fa-instagram"></i></span>
-                </li> </a>
+                <a href="https://www.instagram.com/noah8863/" target="_blank" style="color: white;">
+                    <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </li>
+                </a>
 
-                <a href="https://twitter.com/stacknoah99" target="_blank" style="color: white;"> <li class="icon twitter">
-                    <span class="tooltip">Twitter</span>
-                    <span><i class="fab fa-twitter"></i></span>
-                </li> </a>
+                <a href="https://twitter.com/stacknoah99" target="_blank" style="color: white;">
+                    <li class="icon twitter">
+                        <span class="tooltip">Twitter</span>
+                        <span><i class="fab fa-twitter"></i></span>
+                    </li>
+                </a>
 
-                <a href="https://github.com/Noah8863" target="_blank" style="color: white;"> <li class="icon github">
-                    <span class="tooltip">GitHub</span>
-                    <span><i class="fab fa-github"></i></span>
-                </li> </a>
-                
+                <a href="https://github.com/Noah8863" target="_blank" style="color: white;">
+                    <li class="icon github">
+                        <span class="tooltip">GitHub</span>
+                        <span><i class="fab fa-github"></i></span>
+                    </li>
+                </a>
+
+                <a href="https://www.linkedin.com/in/noah-hoffman-9975a7121/" target="_blank" style="color: white;">
+                    <li class="icon linkedin">
+                        <span class="tooltip">LinkedIn</span>
+                        <span><i class="fa-brands fa-linkedin"></i></span>
+                    </li>
+                </a>
+
             </ul>
         </div>
-    </div>
+    </section>
+    <script src="./scripts/index.js"></script>
     <script src="https://kit.fontawesome.com/78de80bbe9.js" crossorigin="anonymous"></script>
 </body>
 
