@@ -158,6 +158,7 @@ section {
 .flip-card-front {
   color: black;
   background-color: #5c5a5a;
+  margin-top: 10px;
 }
 
 .flip-card-back {
@@ -281,6 +282,41 @@ section {
   }
 }
 
+#topExperinceCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  top: -5%;
+  width: 100%;
+  height: 60%;
+  background-color: #021928;
+  color: #c0bebe;
+}
+
+#topExperinceCard h2 span {
+  display: block;
+}
+
+#experinceTriangleShape {
+  position: relative;
+  margin-top: -5%;
+  margin-bottom: 0%;
+  left: 40%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #021928;
+}
+
 @-webkit-keyframes bounceRight {
   0%,
   20%,
@@ -321,11 +357,11 @@ section {
 
 .fa-angles-right {
   position: relative;
-  top: 50%;
-  color: white;
-  font-size: xx-large;
-  -webkit-animation: bounceRight 2s infinite;
-  animation: bounceRight 2s infinite;
+  top: 10%;
+  color: #c0bebe;
+  font-size: x-large;
+  -webkit-animation: bounceRight 3s infinite;
+          animation: bounceRight 3s infinite;
 }
 
 input[type=radio] {

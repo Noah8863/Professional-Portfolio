@@ -141,6 +141,7 @@ section {
 .flip-card-front {
     color: black;
     background-color:rgb(92, 90, 90);
+    margin-top: 10px;
 }
 .flip-card-back {
     background-color: #000000;
@@ -196,6 +197,36 @@ section {
   }
 }
 
+#topExperinceCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  top: -5%;
+  width: 100%;
+  height: 60%;
+  background-color: #021928;
+  color: rgb(192, 190, 190);
+}
+#topExperinceCard h2 span {
+  display: block;
+}
+#experinceTriangleShape {
+  position: relative;
+  margin-top: -5%;
+  margin-bottom: 0%;
+  left: 40%;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #021928;
+}
+
+
+
+// === Styles for bouncing arrows === //
 @-webkit-keyframes bounceRight {
   0%,
   20%,
@@ -247,14 +278,12 @@ section {
     transform: translateX(-15px);
   }
 }
-
 .fa-angles-right {
   position: relative;
-  top: 50%;
-  color: white;
-  font-size: xx-large;
-  -webkit-animation: bounceRight 2s infinite;
-  animation: bounceRight 2s infinite;
+  top: 10%;
+  color: rgb(192, 190, 190);
+  font-size: x-large;
+  animation: bounceRight 3s infinite;
   
 }
 
