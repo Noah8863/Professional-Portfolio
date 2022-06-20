@@ -41,6 +41,25 @@ section {
   border-radius: 50%;
 }
 
+.landingPage {
+  border-bottom: 1px solid black;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landingPageSection {
+  position: relative;
+  color: white;
+  background-color: black;
+  margin: 0;
+}
+
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -262,23 +281,55 @@ section {
   }
 }
 
-.landingPage {
-  border-bottom: 1px solid black;
-  height: 100vh;
-  text-align: center;
-  position: relative;
-  color: white;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+@-webkit-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
 }
 
-.landingPageSection {
+@keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+}
+
+.fa-angles-right {
   position: relative;
+  top: 50%;
   color: white;
-  background-color: black;
-  margin: 0;
+  font-size: xx-large;
+  -webkit-animation: bounceRight 2s infinite;
+  animation: bounceRight 2s infinite;
+}
+
+input[type=radio] {
+  display: none;
 }
 
 .projectSection {
@@ -294,10 +345,6 @@ section {
   -webkit-transition: background .4s ease-in;
   transition: background .4s ease-in;
   background-color: #000000;
-}
-
-input[type=radio] {
-  display: none;
 }
 
 .card {
@@ -579,11 +626,18 @@ img {
   color: #ffffff;
 }
 
-@media screen and (max-width: 600px) {
+.wrapper .resume:hover,
+.wrapper .resume:hover .tooltip,
+.wrapper .resume:hover .tooltip::before {
+  background: #7d7e7e;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 640px) {
   .wrapper .icon {
     width: 20px;
     height: 20px;
-    right: 35%;
+    right: 25%;
   }
 }
 
@@ -600,6 +654,9 @@ img {
   #experinceCard {
     margin: 10px;
     right: 20%;
+  }
+  .wrapper .icon {
+    margin: 0%;
   }
 }
 
