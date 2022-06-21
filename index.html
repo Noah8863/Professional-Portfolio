@@ -159,11 +159,11 @@
     </section>
     <!-- Project Container -->
 
-    <section class="projectSection" id="projects">
+    <section class="projectSection car-back-drop" id="projects">
         <div class="container">
-            <input type="radio" name="slider" id="item-1" checked>
-            <input type="radio" name="slider" id="item-2">
-            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-1" onclick="parking()" checked>
+            <input type="radio" name="slider" id="item-2" onclick="coffee()" >
+            <input type="radio" name="slider" id="item-3" onclick="password()">
             <div class="cards">
                 <label class="card" for="item-1" id="project-1">
                     <img
@@ -178,7 +178,7 @@
                         src="https://i0.wp.com/whatismyip.network/wp-content/uploads/2019/09/Strong-Password-Generator.jpg?fit=1280%2C721&ssl=1">
                 </label>
             </div>
-            <div class="infoContainer">
+            <div class="infoContainer" id="infoContainer">
                 <div class="upper-part">
                     <div class="info-area" id="test">
                         <label class="project-info" id="project-info-1">

@@ -1,4 +1,4 @@
-//Functions for displaying/hiding information
+// === Functions for displaying/hiding information === //
 function highschool() {
     const highschool = document.getElementById('highschool')
     highschool.classList.toggle('hide')
@@ -24,9 +24,29 @@ function verizon() {
     verizoninfo.classList.toggle('hide')
 }
 
+// === Functions for changing the background color of the section === //
+const background = document.getElementById('projects')
+
+function parking() {
+    background.classList.remove('coffee-back-drop')
+    background.classList.remove('password-back-drop')
+    background.classList.add('car-back-drop')
+}
+
+function coffee() {
+    background.classList.remove('car-back-drop')
+    background.classList.remove('password-back-drop')
+    background.classList.add('coffee-back-drop')
+}
+
+function password() {
+    background.classList.remove('car-back-drop')
+    background.classList.remove('coffee-back-drop')
+    background.classList.add('password-back-drop')
+}
 
 
-
+// === particle library object === //
 particlesJS("particles-js", {
     particles: {
       number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -81,6 +101,6 @@ particlesJS("particles-js", {
       }
     },
     retina_detect: true
-  });
+});
 
-  
+backgroundChange()
