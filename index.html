@@ -14,9 +14,8 @@
 <body>
 
     <!-- Navivation Bar -->
-    <section class="landingPageSection">
-
-        <div class="profileBlock">
+    <section class="landingPageSection ">
+        <div id="particles-js">
             <div class="topnav">
                 <div class="topnav-left">
                     <a href="https://www.theverge.com/tech" target="_blank">News</a>
@@ -24,26 +23,23 @@
                 </div>
                 <div class="topnav-right">
                     <a href="#projects">Projects</a>
-                    
                 </div>
             </div>
-
             <img id="avatar-picture"
                 src="https://scontent.fapa1-2.fna.fbcdn.net/v/t1.6435-9/44337436_1065388343649119_4470334126410432512_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PBECmvoKcXwAX-nIQFp&_nc_ht=scontent.fapa1-2.fna&oh=00_AT-tuIYKn18XA06L5jCyjzpXrGTdI5SQiXwOmfHHRqbyKQ&oe=62CD6107"
                 alt="profilePicture" title="profilePicture">
-            <h1 id="name" style="color: rgb(158, 231, 253); position: relative;">Noah Hoffman</h1><br>
+            <div id="name">
+                <h2>Noah Hoffman</h2>
+            </div>
         </div>
 
+
         <!-- Container with cards and about me text -->
-
-
 
         <!-- About Me Card -->
         <div class="card-container">
             <div id="about-me-text-area" style="color: black;">
-                <h1>
-                    About Me:
-                </h1>
+                <h1 style="color: white;">About Me:</h1>
                 <div class="description">
                     <p>
                         My name is Noah Hoffman and I currently live in Denver, Colorado. I've lived in Denver
@@ -65,7 +61,7 @@
                         jam
                         to.
                     </p>
-                    
+
                 </div>
                 <div class="tile flip-card-inner" id="aboutMeCard">
                     <div class="flip-card">
@@ -74,17 +70,38 @@
                                 <div id="topExperinceCard">
                                     <h2>Education <br> <br>
                                         <i class="fa-solid fa-graduation-cap"></i>
-                                    </h2> 
+                                    </h2>
                                 </div>
                                 <div id="experinceTriangleShape"></div>
                                 <i class="fa-solid fa-angles-right"></i>
                             </div>
                             <div class="flip-card-back">
-                                <h1>Education</h1><br>
-                                <p>Arvada High School</p>
-                                <p>University of California Davis</p>
-                                <p>University of Denver Bootcamp</p>
-                                
+                                <h2>Arvada High School
+                                    <button onclick="highschool()"><i class="fa-solid fa-caret-down"></i></button>
+                                </h2>
+                                <p class="hide" id="highschool">
+                                    2014 - 2018 <br>
+                                    High School diploma <br>
+                                    <a href="https://www.google.com/maps/place/Arvada+Senior+High+School/@39.8153749,-105.0870128,17z/data=!3m1!4b1!4m5!3m4!1s0x876b888f4d8c4d37:0xd3c54e085ad8cd95!8m2!3d39.8153749!4d-105.0848241" target="_blank"> 7951 W 65th Ave, Arvada, CO 80004 </a>
+                                </p>
+
+                                <h2>University Of California Davis
+                                    <button onclick="college()"><i class="fa-solid fa-caret-down"></i></button>
+                                </h2>
+                                <p class="hide" id="college">
+                                    2018 - 2019<br>
+                                    Computer Engineering<br>
+                                    <a href="https://www.google.com/maps/place/University+of+California,+Davis/@38.5382322,-121.7639012,17z/data=!3m1!4b1!4m5!3m4!1s0x80ead37f7489fa3f:0xecbfbb24087e8334!8m2!3d38.5382322!4d-121.7617125" target="_blank">1 Shields Ave, Davis, CA 95616</a> <br>
+                                </p>
+
+                                <h2>Denver University Bootcamp
+                                    <button onclick="bootcamp()"><i class="fa-solid fa-caret-down"></i></button>
+                                </h2>
+                                <p class="hide" id="bootcamp">
+                                    Feb. 2022 - Aug. 2022 <br>
+                                    Full Stack Web Developer <br>
+                                    <a href="https://www.google.com/maps/place/University+of+Denver/@39.6766174,-104.9640852,17z/data=!3m1!4b1!4m5!3m4!1s0x876c7e159cdea761:0x7198a721c70f27d9!8m2!3d39.6766174!4d-104.9618965" target="_blank">2199 S University Blvd, Denver, CO 80208</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -103,7 +120,7 @@
                                 <div id="experinceTriangleShape"></div>
                                 <i class="fa-solid fa-angles-right"></i>
                             </div>
-                            
+
                             <div class="flip-card-back">
                                 <h2>Observ Inc
                                     <button onclick="observ()"><i class="fa-solid fa-caret-down"></i></button>
@@ -251,6 +268,8 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
     </section>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./scripts/index.js"></script>
     <script src="https://kit.fontawesome.com/78de80bbe9.js" crossorigin="anonymous"></script>
 </body>
