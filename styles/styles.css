@@ -1,7 +1,5 @@
 html {
   font-family: sans-serif;
-  -ms-scroll-snap-type: mandatory;
-      scroll-snap-type: mandatory;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -13,6 +11,8 @@ p {
 
 body {
   margin: 0;
+  background-color: white;
+  overflow: scroll;
 }
 
 section {
@@ -24,20 +24,35 @@ section {
   position: relative;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .hide {
   display: none;
 }
 
-.profileBlock {
-  text-align: center;
-  position: relative;
-  background-image: url("https://img.freepik.com/free-photo/technology-network-background_34629-304.jpg?size=626&ext=jpg");
+#particles-js {
+  width: 100vw;
+  height: 35%;
+  background-color: #021928;
+  background-image: url("");
 }
 
 #avatar-picture {
-  margin-top: 5%;
-  width: 15%;
-  height: 15%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
   border-radius: 50%;
 }
 
@@ -60,6 +75,20 @@ section {
   margin: 0;
 }
 
+#name {
+  position: relative;
+  top: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -70,7 +99,7 @@ section {
 }
 
 .topnav a:hover {
-  color: black;
+  color: #9e9d9d;
 }
 
 .topnav a.active {
@@ -107,7 +136,6 @@ section {
 }
 
 .card-container {
-  font-size: small;
   position: relative;
   width: auto;
   height: 70%;
@@ -115,6 +143,11 @@ section {
   margin-top: 0;
   background-color: black;
   overflow: scroll;
+}
+
+.flip-card-back a {
+  text-decoration: none;
+  color: white;
 }
 
 .description {
@@ -194,66 +227,6 @@ section {
 .tile .card.back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-}
-
-.tile:nth-child(1) {
-  -webkit-animation-delay: 0.04s;
-          animation-delay: 0.04s;
-}
-
-.tile:nth-child(2) {
-  -webkit-animation-delay: 0.08s;
-          animation-delay: 0.08s;
-}
-
-.tile:nth-child(3) {
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-}
-
-.tile:nth-child(4) {
-  -webkit-animation-delay: 0.16s;
-          animation-delay: 0.16s;
-}
-
-.tile:nth-child(5) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.tile:nth-child(6) {
-  -webkit-animation-delay: 0.24s;
-          animation-delay: 0.24s;
-}
-
-.tile:nth-child(7) {
-  -webkit-animation-delay: 0.28s;
-          animation-delay: 0.28s;
-}
-
-.tile:nth-child(8) {
-  -webkit-animation-delay: 0.32s;
-          animation-delay: 0.32s;
-}
-
-.tile:nth-child(9) {
-  -webkit-animation-delay: 0.36s;
-          animation-delay: 0.36s;
-}
-
-.tile:nth-child(10) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.tile:nth-child(11) {
-  -webkit-animation-delay: 0.44s;
-          animation-delay: 0.44s;
-}
-
-.tile:nth-child(12) {
-  -webkit-animation-delay: 0.48s;
-          animation-delay: 0.48s;
 }
 
 @-webkit-keyframes fade-in {
@@ -426,14 +399,6 @@ input[type=radio] {
   margin-bottom: 20px;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 #item-1:checked ~ .cards #project-3, #item-2:checked ~ .cards #project-1, #item-3:checked ~ .cards #project-2 {
   -webkit-transform: translatex(-40%) scale(0.8);
           transform: translatex(-40%) scale(0.8);
@@ -463,7 +428,7 @@ img {
 .infoContainer {
   background-color: #fff;
   border-radius: 8px;
-  min-width: 320px;
+  min-width: 260px;
   padding: 16px 10px;
 }
 
@@ -715,13 +680,13 @@ img {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
+  .contact-info {
+    margin: 0;
+  }
   .wrapper .icon {
     margin: 0%;
   }
-}
-
-@media screen and (max-width: 310px) {
   .topnav {
     position: relative;
     display: -webkit-box;
@@ -731,13 +696,36 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .topnav-right {
     float: none;
     margin-right: 0px;
   }
   #avatar-picture {
-    display: none;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  ul.wrapper {
+    left: 5%;
+  }
+  #contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
