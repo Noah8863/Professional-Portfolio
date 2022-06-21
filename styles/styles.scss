@@ -35,7 +35,7 @@ img {
 // ====== Profile & Banner Styles ======== //
 #particles-js {
   width: 100vw;
-  height: 35%;
+  height: 40%;
   background-color: #021928;
   background-image: url("");
 }
@@ -53,7 +53,6 @@ img {
 }
 .landingPage {
   border-bottom: 1px solid rgb(0, 0, 0);
-  height: 100vh;
   text-align: center;
   position: relative;
   color: white;
@@ -64,6 +63,7 @@ img {
   color: white;
   background-color: rgb(0, 0, 0);
   margin: 0;
+  height: 100vh;
 }
 #name {
   position: relative;
@@ -72,9 +72,14 @@ img {
   justify-content: center;
   align-items: center;
 }
+#tip {
+  font-size: small;
+  position: relative;
+  float: left;
+  top: 60%;
+}
 
 // ====== Navigation Styles ======== //
-
 
 .topnav a {
   float: left;
@@ -123,8 +128,7 @@ img {
 .card-container {
   position: relative;
   width: auto;
-  height: 70%;
-  margin-bottom: 10px;
+  height: 60%;
   margin-top: 0;
   background-color: rgb(0, 0, 0);
   overflow: scroll;
