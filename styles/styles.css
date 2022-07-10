@@ -148,7 +148,6 @@ img {
   height: 60%;
   margin-top: 0;
   background-color: black;
-  overflow: scroll;
 }
 
 .flip-card-back a {
