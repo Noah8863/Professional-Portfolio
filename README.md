@@ -8,10 +8,14 @@ The main object is to show off some of my HTML, CSS and Javascript skills when g
 What is Used
 * index.html
 * style.css
+* Javascript.js
+* SASS.scss
+* particles.js
 
 ## Live URL
 https://noah8863.github.io/Professional-Portfolio/
 
 ## Screenshots
 
-<img width="1440" alt="77DF1BC3-3828-48C6-930F-2FF94A62F710" src="https://user-images.githubusercontent.com/60634270/163698043-851703a4-f882-48dc-997c-0ff62fa3ac8d.png">
+
+<img width="1440" alt="D25DDBD8-356B-45A3-8B5F-8D3A595F1AEC" src="https://user-images.githubusercontent.com/60634270/174947389-f3081500-d6c4-4a19-b9ae-dc60157d0c50.png">
