@@ -2,5 +2,23 @@
   "dependencies": {
     "requirejs": "^2.3.6",
     "sass": "^1.52.3"
-  }
+  },
+  "name": "professional-portfolio",
+  "description": "## Project Description A professional portfolio that can be used to display some of my projects and things I'm working on. It has my contact information, links to my social media profiles and links to each of my projects.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noah8863/Professional-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noah8863/Professional-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Noah8863/Professional-Portfolio#readme"
 }
