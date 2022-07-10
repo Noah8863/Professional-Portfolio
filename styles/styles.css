@@ -1,8 +1,5 @@
 html {
   font-family: sans-serif;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 p {
@@ -343,7 +340,7 @@ img {
 }
 
 .car-back-drop {
-  background-color: #126699;
+  background-color: #30a9e0;
 }
 
 .coffee-back-drop {
