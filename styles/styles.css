@@ -371,7 +371,7 @@ input[type=radio] {
 
 .card {
   position: absolute;
-  width: 60%;
+  width: 55%;
   height: 100%;
   left: 0;
   right: 0;
@@ -385,7 +385,7 @@ input[type=radio] {
 
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 780px;
   max-height: 600px;
   height: 100%;
   -webkit-transform-style: preserve-3d;
