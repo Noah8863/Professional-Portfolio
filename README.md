@@ -19,3 +19,11 @@ https://noah8863.github.io/Professional-Portfolio/
 
 
 <img width="1440" alt="D25DDBD8-356B-45A3-8B5F-8D3A595F1AEC" src="https://user-images.githubusercontent.com/60634270/174947389-f3081500-d6c4-4a19-b9ae-dc60157d0c50.png">
+
+  If you have any questions, please contact me at: 
+ 
+  Github Profile: [noah8863](https://github.com/noah8863)  
+
+  Email: stacknoah99@gmail.com 
+
+  LinkedIn: [Noah Hoffman](https://www.linkedin.com/in/noah-hoffman-9975a7121/)
